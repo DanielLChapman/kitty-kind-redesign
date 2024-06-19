@@ -1,0 +1,91 @@
+/* SCSS HEX */
+/* Font Families */
+.kalam-light {
+  font-family: "Kalam", cursive;
+  font-weight: 300;
+}
+
+.kalam-regular {
+  font-family: "Kalam", cursive;
+  font-weight: 400;
+}
+
+.kalam-bold {
+  font-family: "Kalam", cursive;
+  font-weight: 700;
+}
+
+/* Body Styling */
+body {
+  background-color: #efe6d4;
+}
+
+/* Header Styling */
+header {
+  font-family: "Kalam", cursive;
+  font-weight: 700;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1500px;
+}
+
+header h1 {
+  font-size: 2.5em;
+  margin: 20px 0;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  letter-spacing: 2px;
+}
+
+/* Button Styling */
+.link-button {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  background-color: #aac9cc;
+  color: white;
+  border: none;
+  padding: 5px 40px;
+  font-size: 1em;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+.link-button a {
+  text-decoration: none;
+}
+.link-button:hover {
+  background-color: #8ab5b9;
+}
+.link-button.how-to-help {
+  background-color: #ffa07a;
+}
+.link-button.how-to-help:hover {
+  background-color: #ff7c47;
+}
+
+/* Content Styling */
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 40px;
+  margin: 0 auto;
+  max-width: 1500px;
+}
+
+.content-box {
+  width: 400px;
+  border-radius: 5px;
+  box-shadow: 0 0 2px #000;
+  height: 500px;
+  border: 1px solid grey;
+}
+
+/*# sourceMappingURL=styles.css.map */

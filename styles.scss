@@ -1,0 +1,103 @@
+/* SCSS HEX */
+$space-cadet: #2f3650ff;
+$cadet-gray: #82a8b9ff;
+$melon: #fab5acff;
+$apricot: #f5ccafff;
+$eggshell: #efe6d4ff;
+$baby-powder: #fefef6ff;
+$light-blue: #aac9ccff;
+$silver: #acb3b4ff;
+$melon-2: #f8aea7ff;
+
+/* Font Families */
+.kalam-light {
+  font-family: "Kalam", cursive;
+  font-weight: 300;
+}
+
+.kalam-regular {
+  font-family: "Kalam", cursive;
+  font-weight: 400;
+}
+
+.kalam-bold {
+  font-family: "Kalam", cursive;
+  font-weight: 700;
+}
+
+/* Body Styling */
+body {
+  background-color: $eggshell;
+}
+
+/* Header Styling */
+header {
+  font-family: "Kalam", cursive;
+  font-weight: 700;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1500px;
+}
+
+header h1 {
+  font-size: 2.5em;
+  margin: 20px 0;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+  letter-spacing: 2px;
+}
+
+/* Button Styling */
+.link-button {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  background-color: $light-blue;
+  color: white;
+  border: none;
+  padding: 5px 40px;
+  font-size: 1em;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  text-decoration: none;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+
+  a {
+    text-decoration: none;
+  }
+
+  &:hover {
+    background-color: darken($light-blue, 10%);
+  }
+
+  &.how-to-help {
+    background-color: #ffa07a;
+
+    &:hover {
+      background-color: darken(#ffa07a, 10%);
+    }
+  }
+}
+
+/* Content Styling */
+.content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  gap: 40px;
+  margin: 0 auto;
+  max-width: 1500px;
+}
+
+.content-box {
+  width: 400px;
+  border-radius: 5px;
+  box-shadow: 0 0 2px #000;
+  height: 500px;
+  border: 1px solid grey;
+}
