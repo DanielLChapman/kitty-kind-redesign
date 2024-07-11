@@ -86,6 +86,109 @@ header h1 {
   box-shadow: 0 0 2px #000;
   height: 500px;
   border: 1px solid grey;
+  position: relative;
 }
+
+.content-cat-image {
+  position: absolute;
+  width: 50px; /* Adjust as necessary */
+  height: 50px; /* Adjust as necessary */
+}
+
+.top {
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.side {
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+.bottom {
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.overhang-cat-leftside::before {
+  content: "";
+  position: relative;
+  width: 150px;
+  height: 150px;
+  background-image: url(images/overhang_cat.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  transform: translateY(-65%);
+  /* left: -18%; */
+  display: block;
+}
+
+.overhang-cat-rightside::before {
+  content: "";
+  position: relative;
+  width: 150px;
+  height: 150px;
+  background-image: url(images/overhang_cat.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  transform: translateY(-65%);
+  left: 60%;
+  display: block;
+}
+
+.bottom-right-orange::after {
+  content: "";
+  position: relative;
+  width: 200px;
+  height: 200px;
+  background-image: url(images/orange_stare_cat.png);
+  background-size: cover;
+  background-position: center;
+  left: 50%;
+  top: 60%;
+  display: block;
+}
+
+.bottom-orange::before {
+  content: "";
+  position: relative;
+  width: 200px;
+  height: 200px;
+  background-image: url(images/orange_weird_cat.png);
+  background-size: cover;
+  background-position: center;
+  left: 25%;
+  top: 60%;
+  display: block;
+}
+
+.bottom-blue::after {
+  content: "";
+  position: relative;
+  width: 200px;
+  height: 200px;
+  background-image: url(images/blue_cartoon.png);
+  background-size: cover;
+  background-position: center;
+  left: 25%;
+  top: 60%;
+  display: block;
+}
+
+.overhang-image {
+  position: absolute;
+  top: -50%; /* Move the image halfway out of the div */
+  left: 50%;
+  transform: translateX(-50%);
+  width: auto; /* Adjust the width or height as necessary */
+  height: auto; /* Adjust the width or height as necessary */
+}
+
+
 
 /*# sourceMappingURL=styles.css.map */
